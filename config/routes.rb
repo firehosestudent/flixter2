@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   resources :courses, only: [:index, :show]
 
+  resources :lessons, only: [:show]
+
 
   namespace :instructor do
     resources :sections, only: [] do 
@@ -15,6 +17,8 @@ Rails.application.routes.draw do
       resources :sections, only: [:new, :create]               
     end
   end
+
+
 
 
 end
