@@ -2,6 +2,9 @@
 <html>
   <head>
     <title>Flixter2</title>
+
+    
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -36,7 +39,7 @@
               <li class="nav-item">
                 <%= link_to 'My Dashboard', dashboard_path, class: 'nav-link' %>
               </li>
-              
+
               <li class="nav-item">
                 <%= link_to  'Signed Out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
               </li>
